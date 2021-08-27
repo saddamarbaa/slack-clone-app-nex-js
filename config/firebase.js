@@ -1,19 +1,12 @@
-/** @format */
-
 import firebase from "firebase";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyD4AbgDx752QgRjgGM1y7o0e3ySICl52dk",
-
-	authDomain: "slack-clone-nextjs-saddam.firebaseapp.com",
-
-	projectId: "slack-clone-nextjs-saddam",
-
-	storageBucket: "slack-clone-nextjs-saddam.appspot.com",
-
-	messagingSenderId: "839447740674",
-
-	appId: "1:839447740674:web:df12d9e49d95fce717c21b",
+	apiKey: process.env.API_KEY,
+	authDomain: process.env.AUTH_DOMAIN,
+	projectId: process.env.PROJECT_ID,
+	storageBucket: process.env.STORAGE_BUCKET,
+	messagingSenderId: process.env.MESSAIN_SENDER_ID,
+	appId: process.env.APPID,
 };
 
 const firebaseApp = !firebase.apps.length
