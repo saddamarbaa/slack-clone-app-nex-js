@@ -1,3 +1,189 @@
+# Slack Clone
+
+ Building Slack Clone Clone App with React Js, Next Js, Redux, Styled Component, 
+ Material-UI, Firebase Realtime Database, Vercel Hosting, 
+ with complete user authentication (a mobile-friendly).
+
+  
+# Table of contents
+
+-  [Author](#Author)
+-  [Demo](#Demo)
+-  [Technologies](#Technologies)
+-  [Features](#Features)
+-  [Optimizations](#Optimizations)
+-  [Contributing](#Contributing)
+-  [Status](#status)
+-  [Inspiration](#inspiration)
+-  [Support](#Support)
+-  [Feedback](#Feedback)
+-  [Run Locally](#Run_Locally)
+-  [Environment Variables](#Environment)
+-  [Screenshots](#Screenshots)
+
+
+
+# Author
+
+### <a href="https://github.com/saddamarbaa">@Saddam Arbaa</a>
+
+
+
+# Technologies
+
+**Client:**
+
+-  React Js
+-  Next Js
+-  Redux
+-  Styled Component
+-  Material-UI
+
+**Server:**
+
+-  Firebase Realtime Database
+-  Firebase Google Authentication
+-  Vercel Hosting
+
+
+
+# Demo
+
+## <a href="https://slack-clone-app-nex-js.vercel.app">LIVE DEMO</a>
+
+
+
+
+
+# Features
+
+-  Complete user authentication users can sign in, sign out
+-  add new chat rooms
+-  realtime time chat
+
+
+#  Optimizations
+-  Next' Js Image component
+-  Next' Js file-system based router
+-  Next' Js Server-side rendering
+-  Memoization (useMemo, Memo)
+-  Function components
+-  React hooks
+-  React useEffect cleanup
+-  react-firebase-hooks
+
+
+
+# Contributing
+
+Contributions are always welcome!
+
+
+# Support
+
+For support, email saddamarbaas@gmail.com.
+
+
+# Feedback
+
+If you have any feedback, please reach out to me at saddamarbaas@gmail.com
+
+Twitter
+https://twitter.com/ArbaaSaddam/
+
+Linkedin.
+https://www.linkedin.com/in/saddamarbaa/
+
+Github
+https://github.com/saddamarbaa
+
+Instagram
+https://www.instagram.com/saddam.dev/
+
+Facebook
+https://www.facebook.com/saddam.arbaa
+
+
+
+# Run_Locally
+
+Clone the project
+
+```bash
+  https://github.com/saddamarbaa/slack-clone-app-nex-js
+```
+
+Go to the project directory
+
+```bash
+  cd slack-clone-app-nex-js
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+# Environment
+
+- To run this project, you will need to create a new project on firebase, setup Firebase Realtime Database and add the following environment variables to your next.config.js
+
+-  API_KEY
+-  AUTH_DOMAIN
+-  PROJECT_ID
+-  STORAGE_BUCKET
+-  MESSAIN_SENDER_ID
+-  APPID
+
+
+# Status
+
+Project is now complete in (React js + Next js) so my next step I would love to converted to (React + TypeScript + Next.js + Node.js + Express + MongoDB)
+
+
+# Inspiration
+
+Build By Saddam Arbaa Project inspired by [https://slack.com/intl/en-id/]
+
+
+
+
+# Screenshots
+
+##  Responsive on large screens - Home Page 
+
+![image](https://user-images.githubusercontent.com/51326421/131182877-d5af3558-dfa7-4bcf-8d92-a5f1c7891773.png)
+
+
+
+
+
+
+## Responsive on mobile and tablet screens 
+![image](https://user-images.githubusercontent.com/51326421/131183181-983af6a4-41b6-4053-87dc-a9190c99aed1.png)
+
+
+
+
+
+
+
+
+## LogIn Page
+
+![image](https://user-images.githubusercontent.com/51326421/131183072-0e9b8482-9d0b-4c2c-99ff-967f27882a35.png)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
