@@ -1,18 +1,33 @@
 /** @format */
 
 import Head from "next/head";
-import Header from "../components/header";
+import React from "react";
+import HomePageComponent from "../components/homePage/homePage";
+import getRoomsInDB from "../lib/api-util";
 
-export default function Home() {
+function HomePage(props) {
 	return (
-		<div>
+		<React.Fragment>
 			<Head>
 				<title>Slack Clone App</title>
 				<meta name='description' content='Next Js Slack Clone next app' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Header />
-		</div>
+			<HomePageComponent roomsInDb={JSON.parse(props?.rooms)} />
+		</React.Fragment>
 	);
 }
+
+export async function getServerSideProps(context) {
+	const roomsInDB = await getRoomsInDB();
+
+	// Pass data to the page via props
+	return {
+		props: {
+			rooms: roomsInDB,
+		},
+	};
+}
+
+export default HomePage;

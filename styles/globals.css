@@ -9,6 +9,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden !important;
 	--slack-color: #3f0f40;
+	--slack-secondary-color: #814885;
+	color: white;
+	color:rgb(98, 78, 99);
 }
 
 a {
