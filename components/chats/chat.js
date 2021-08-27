@@ -120,7 +120,7 @@ const Chat = (props) => {
 							id='message'
 							required
 							ref={messageRef}
-							placeholder={`select room to start chatting`}
+							placeholder={`Select room to start chat`}
 							disabled={!props?.chatRoomId}
 						/>
 					)}

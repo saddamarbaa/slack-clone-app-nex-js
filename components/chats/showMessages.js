@@ -53,6 +53,8 @@ const ShowMessages = React.forwardRef((props, ref) => {
 	);
 });
 
+// To fix error(Component definition is missing display/name-react)
+ShowMessages.displayName = "ShowMessages";
 export default ShowMessages;
 
 const ShowMessagesWrapper = styled.div`

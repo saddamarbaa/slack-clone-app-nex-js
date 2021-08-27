@@ -67,6 +67,9 @@ const SideBarChannelOption = React.forwardRef((props, ref) => {
 	);
 });
 
+// To fix error(Component definition is missing display/name-react)
+SideBarChannelOption.displayName = "SideBarChannelOption";
+
 export default SideBarChannelOption;
 
 const SideBarOptionWrapper = styled.div`
@@ -77,7 +80,6 @@ const SideBarOptionWrapper = styled.div`
 	cursor: pointer;
 	transition: 0.3s;
 	color: white;
-
 	div {
 		display: flex;
 		align-items: center;
@@ -85,11 +87,9 @@ const SideBarOptionWrapper = styled.div`
 	&:hover {
 		background: rgb(55, 0, 56);
 	}
-
 	@media (max-width: 568px) {
 		background-color: transparent;
 	}
-
 	.hid-m {
 		@media (max-width: 767px) {
 			display: none;

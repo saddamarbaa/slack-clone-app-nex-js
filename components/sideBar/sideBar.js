@@ -37,7 +37,6 @@ const SideBar = (props) => {
 			<SideBarOptionTop Icon={MoreHorizIcon} title='More' />
 
 			<SideBarChannelOption
-				title='React Js Room'
 				Icon={AddCircleIcon}
 				title='Add New Channel'
 				addRoom={true}
