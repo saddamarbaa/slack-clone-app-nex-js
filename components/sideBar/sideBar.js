@@ -16,33 +16,42 @@ import ShowRooms from "./showRooms";
 const SideBar = (props) => {
 	return (
 		<SideBarWrapper>
-			<SideBarHeader>
-				<h1>
-					Coding with Saddam <ExpandMoreIcon />
-				</h1>
-				<div>
-					<CreateIcon className='MuiSvgIcon' />
-				</div>
-			</SideBarHeader>
-			{/* Side Option top */}
-			<SideBarOptionTop Icon={CollectionsIcon} title='Drafts' number />
-			<SideBarOptionTop
-				Icon={SupervisedUserCircleIcon}
-				title='Mentions & reaction'
-			/>
-			<SideBarOptionTop Icon={TurnedInIcon} title='Saved items' number />
-			<SideBarOptionTop Icon={YouTubeIcon} title='YouTube' />
-			<SideBarOptionTop Icon={GitHubIcon} title='GitHub' />
+			<div id='fixed-position'>
+				<SideBarHeader>
+					<h1>
+						Coding with Saddam <ExpandMoreIcon />
+					</h1>
+					<div>
+						<CreateIcon className='MuiSvgIcon' />
+					</div>
+				</SideBarHeader>
 
-			<SideBarOptionTop Icon={MoreHorizIcon} title='More' />
+				<SideBarBody>
+					{/* Side Option top */}
+					<SideBarOptionTop Icon={CollectionsIcon} title='Drafts' number />
+					<SideBarOptionTop
+						Icon={SupervisedUserCircleIcon}
+						title='Mentions & reaction'
+					/>
+					<SideBarOptionTop
+						Icon={TurnedInIcon}
+						title='Saved items'
+						number
+					/>
+					<SideBarOptionTop Icon={YouTubeIcon} title='YouTube' />
+					<SideBarOptionTop Icon={GitHubIcon} title='GitHub' />
 
-			<SideBarChannelOption
-				Icon={AddCircleIcon}
-				title='Add New Channel'
-				addRoom={true}
-			/>
-			{/* Sidebar Channels */}
-			<ShowRooms roomsInDb={props?.roomsInDb} />
+					<SideBarOptionTop Icon={MoreHorizIcon} title='More' />
+
+					<SideBarChannelOption
+						Icon={AddCircleIcon}
+						title='Add New Channel'
+						addRoom={true}
+					/>
+					{/* Sidebar Channels */}
+					<ShowRooms roomsInDb={props?.roomsInDb} />
+				</SideBarBody>
+			</div>
 		</SideBarWrapper>
 	);
 };
@@ -53,11 +62,16 @@ const SideBarWrapper = styled.div`
 	flex: 0.3;
 	max-width: 19rem;
 	min-width: 19rem;
-	min-height: 100vh;
-	max-height: 100vh;
-	overflow-x: hidden !important;
 	background-color: var(--slack-color);
 	padding: 4.5rem 0;
+	min-height: 100%;
+	overflow: hidden;
+
+	#fixed-position {
+		max-width: 19rem;
+		min-width: 19rem;
+		overflow-x: hidden !important;
+	}
 
 	@media (max-width: 767px) {
 		max-width: 8rem;
@@ -107,4 +121,12 @@ const SideBarHeader = styled.div`
 		font-weight: bold;
 	}
 	border: 1px solid rgb(98, 78, 99);
+`;
+
+const SideBarBody = styled.div`
+	max-height: 100vh;
+	overflow: hidden;
+	&:hover {
+		overflow-y: auto;
+	}
 `;
